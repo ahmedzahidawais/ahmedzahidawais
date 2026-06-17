@@ -1,109 +1,53 @@
 # 👋 Hi, I'm Awais Ahmed
 
-**AI Engineer — LLMs · RAG · MLOps**, building toward a **Forward Deployed Engineer / Solutions Architect** role at the frontier of applied AI.
+**AI Engineer** building production Generative AI — RAG systems, LLM fine-tuning, and agentic workflows — and taking them from prototype to something a real customer can use.
 
-I take Generative AI systems from **prototype → production** — enterprise RAG platforms, LLM fine-tuning, and scalable FastAPI services on Terraform-managed Azure/GCP — and pair that with **client-facing delivery**: pre-sales PoCs, demos, and solution architecture for enterprise customers.
+Currently at **NFON AG**, developing LLM-powered conversational-intelligence features (transcription analysis, summarization, real-time agent assist) for a European cloud-communications platform. Before that, I architected enterprise RAG and fine-tuning systems and ran technical pre-sales at SII Technologies.
 
-Currently an **AI Engineer at NFON AG**, building LLM-powered conversational-intelligence features for a European cloud-communications platform, while pursuing an **M.Sc. in Artificial Intelligence** at Technische Hochschule Ingolstadt.
+I work the full path — model, backend, infrastructure, and the customer conversation. Most of what I build is GDPR / EU AI Act–aware, because that's the reality of shipping AI in Europe.
 
-📍 Ingolstadt, Germany &nbsp;•&nbsp; 🇪🇺 GDPR & EU AI Act–aware GenAI delivery &nbsp;•&nbsp; 🗣 English (C1) · German (B2 → C1) · Urdu (native)
-
----
-
-## 🔭 What I'm building toward
-
-The rare profile that can **build the system *and* run the customer meeting**. I'm building that proof in public — three flagship repos, each shipping with an eval suite and a demo:
-
-| 🚧 In progress | What it proves |
-|---|---|
-| **Enterprise RAG, done properly** | Hybrid retrieval (dense + BM25) + cross-encoder reranking, streaming FastAPI backend, a real **eval suite** (LLM-as-judge), Docker + Terraform deploy, EU data-residency / PII handling |
-| **Agent + MCP** | A working business agent on the Claude API with tool use, plus a custom **MCP server**, with a task-success eval harness |
-| **LLM cost / latency benchmark** | One business workload across Claude / GPT / a self-hosted open model — accuracy vs. cost vs. latency vs. compliance trade-offs |
-
-Alongside these I'm going deep on **LLM serving infrastructure** — KV caching, continuous batching, paged attention, Triton kernels, and vLLM internals.
+📍 Ingolstadt, Germany &nbsp;·&nbsp; 🗣 English (C1) · German (B2) · Urdu (native)
 
 ---
 
-## 🔧 What I work on
+## 🚀 Featured Projects
 
-- 🤖 **Generative AI & LLM Systems**
-  - Retrieval-Augmented Generation (RAG), agentic workflows, tool use & MCP
-  - Vector search (FAISS, Chroma, Azure AI Search), cross-encoder reranking, embeddings
-  - Fine-tuning (QLoRA, Unsloth), quantized inference (GGUF, ONNX), LLM evaluation
+### [enterprise-rag](https://github.com/ahmedzahidawais/enterprise-rag) — production RAG for regulated EU clients
+Hybrid retrieval (FAISS + BM25) with cross-encoder reranking, a streaming FastAPI backend, and a full **eval harness** — retrieval metrics and answer quality (LLM-as-judge) are measured, not assumed. PII redaction, on-device embeddings, and a Terraform deploy pinned to EU regions. ~$0.25 per 1,000 queries.
+`Python · FastAPI · FAISS · BM25 · Cross-encoders · Docker · Terraform · Streamlit`
 
-- 🧠 **Machine Learning**
-  - PyTorch, Transformers, scikit-learn
-  - Structured data extraction, NLP pipelines, unsupervised learning & clustering
+### [GithubRepoAssistant](https://github.com/ahmedzahidawais/GithubRepoAssistant) — natural-language agent over any GitHub repo
+An agent (Pydantic AI) that answers questions about any public repository through 10 tools over the live GitHub REST API — metrics, issues, PRs, commits, contributors, README parsing — with async retries and rate-limit backoff.
+`Python · Pydantic AI · GitHub API · async`
 
-- ⚙️ **Backend & Infrastructure**
-  - FastAPI, REST APIs, streaming inference
-  - Docker, Terraform, CI/CD, Jenkins
-  - Azure, GCP, AWS, Databricks
+### [routed-rag](https://github.com/ahmedzahidawais/routed-rag) — intent-routed RAG chatbot
+Routes each query to the right backend — a Chroma-indexed document store or a live weather API — and handles mixed-intent questions across both. Containerized, with a TypeScript frontend.
+`Python · FastAPI · LangChain · Chroma · Docker`
 
-- 📊 **Analytics & Visualization**
-  - BigQuery SQL · Tableau (incl. Server admin) · Power BI · Looker Studio
+**Earlier production work** (internal, no public repo): fine-tuned **Llama-3-8B** (QLoRA / Unsloth) to 98% valid-JSON extraction accuracy and quantized it to GGUF for cost-efficient self-hosted inference; built the FastAPI backend of an automotive recommendation engine — NLP query parsing, VIN detection, real-time API enrichment — from concept to client demo.
 
 ---
 
-## 🚀 Selected Projects
+## 🧰 Tech
 
-### 🔹 Enterprise RAG Platform (Azure, FastAPI)
-- Designed and deployed a scalable **Retrieval-Augmented Generation system** for enterprise use
-- Improved retrieval accuracy by **~40%** using a multi-stage pipeline (dense vector search + cross-encoder reranking)
-- Productionized with FastAPI, Docker, and Terraform on Azure
+**LLM / GenAI** — RAG · agents & tool use · embeddings · cross-encoder reranking · fine-tuning (QLoRA, Unsloth) · LLM evaluation · quantized inference (GGUF, ONNX)
 
-### 🔹 LLM Fine-Tuning for Structured Extraction
-- Fine-tuned **Llama-3-8B** using **QLoRA + Unsloth** for automated structured data extraction
-- Achieved **98% valid-JSON output accuracy**; quantized to GGUF for cost-efficient self-hosted inference
+**Languages & Frameworks** — Python · SQL · PyTorch · Transformers · FastAPI · LangChain · LangGraph · Pydantic AI
 
-### 🔹 AI-Powered Automotive Recommendation Engine
-- Built a **FastAPI backend** with NLP query parsing, VIN detection, and real-time enrichment from external automotive APIs
-- Carried from concept to client-facing demo
+**Cloud & Infrastructure** — Azure · GCP · AWS · Databricks · Terraform · Docker · CI/CD
 
-### 🔹 HR Analytics Dashboards (Tableau)
-- Designed interactive **Tableau dashboards** for HR decision-making
-- Administered Tableau Server (roles, permissions, access control); led stakeholder workshops to align KPIs
-
-### 🔹 Driving Pattern Identification (Bachelor Thesis)
-- Identified driving patterns at roundabouts using **unsupervised ML**; clustered vehicle trajectories to extract behavioural patterns
-- Tools: Python, scikit-learn, tslearn, Matplotlib
-
----
-
-## 🧰 Tech Stack
-
-**Languages & Frameworks**
-`Python · SQL · PyTorch · Transformers · FastAPI · LangChain · LangGraph · LlamaIndex`
-
-**ML / GenAI**
-`RAG · Agents & MCP · Embeddings · Cross-Encoders · QLoRA · Prompt Engineering · LLM Evaluation · Quantized Inference (GGUF, ONNX)`
-
-**Cloud & DevOps**
-`Azure · GCP · AWS · Databricks · Terraform · Docker · Jenkins · CI/CD`
-
-**Analytics**
-`BigQuery · Tableau · Power BI · Looker Studio`
-
----
-
-## 🌱 Currently
-
-- Building the three flagship repos above — in public, with evals and demo videos
-- Going deep on **LLM serving infrastructure** (vLLM, Triton, continuous batching)
-- Working toward **German C1** for the DACH enterprise market
-- Writing about **GenAI in regulated European enterprises** — EU AI Act, GDPR-compliant RAG, on-prem vs. API trade-offs
+**Analytics** — BigQuery · Tableau · Power BI · Looker Studio
 
 ---
 
 ## 🎓 Certifications
 
-- 🏅 **Google Cloud Professional Data Engineer** (2025)
-- 🏅 **NVIDIA Certified Associate — Generative AI & LLMs** (NCA-GENL, 2025)
-- 🏅 **PyTorch for Deep Learning**
+- **Google Cloud Professional Data Engineer** (2025)
+- **NVIDIA Certified Associate — Generative AI & LLMs** (NCA-GENL, 2025)
 
 ---
 
-## 📫 Let's connect
+## 📫 Connect
 
-- 💼 LinkedIn: https://www.linkedin.com/in/ahmedzahidawais
-- ✉️ Email: ahmedzahidawais@gmail.com
+- 💼 LinkedIn — https://www.linkedin.com/in/ahmedzahidawais
+- ✉️ Email — ahmedzahidawais@gmail.com

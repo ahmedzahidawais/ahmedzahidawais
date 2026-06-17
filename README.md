@@ -12,15 +12,15 @@ I work the full path — model, backend, infrastructure, and the customer conver
 
 ## 🚀 Featured Projects
 
-### [enterprise-rag](https://github.com/ahmedzahidawais/enterprise-rag) — production RAG for regulated EU clients
+### [enterprise-rag](https://github.com/aawais-ai/enterprise-rag) — production RAG for regulated EU clients
 Hybrid retrieval (FAISS + BM25) with cross-encoder reranking, a streaming FastAPI backend, and a full **eval harness** — retrieval metrics and answer quality (LLM-as-judge) are measured, not assumed. PII redaction, on-device embeddings, and a Terraform deploy pinned to EU regions. ~$0.25 per 1,000 queries.
 `Python · FastAPI · FAISS · BM25 · Cross-encoders · Docker · Terraform · Streamlit`
 
-### [GithubRepoAssistant](https://github.com/ahmedzahidawais/GithubRepoAssistant) — natural-language agent over any GitHub repo
+### [GithubRepoAssistant](https://github.com/aawais-ai/GithubRepoAssistant) — natural-language agent over any GitHub repo
 An agent (Pydantic AI) that answers questions about any public repository through 10 tools over the live GitHub REST API — metrics, issues, PRs, commits, contributors, README parsing — with async retries and rate-limit backoff.
 `Python · Pydantic AI · GitHub API · async`
 
-### [routed-rag](https://github.com/ahmedzahidawais/routed-rag) — intent-routed RAG chatbot
+### [routed-rag](https://github.com/aawais-ai/routed-rag) — intent-routed RAG chatbot
 Routes each query to the right backend — a Chroma-indexed document store or a live weather API — and handles mixed-intent questions across both. Containerized, with a TypeScript frontend.
 `Python · FastAPI · LangChain · Chroma · Docker`
 
